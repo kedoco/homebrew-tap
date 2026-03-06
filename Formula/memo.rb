@@ -1,5 +1,5 @@
-class NixPipeTools < Formula
-  desc "Small, composable Unix utilities: memo, tap, prv, cel, when"
+class Memo < Formula
+  desc "Content-addressed command memoization"
   homepage "https://github.com/kedoco/nix-pipe-tools"
   version "0.1.0"
   license "MIT"
@@ -28,16 +28,9 @@ class NixPipeTools < Formula
 
   def install
     bin.install "memo"
-    bin.install "tap"
-    bin.install "prv"
-    bin.install "cel"
-    bin.install "when"
   end
 
   test do
     assert_match "memo", shell_output("#{bin}/memo --help")
-    assert_match "tap", shell_output("#{bin}/tap --help")
-    assert_match "cel", shell_output("#{bin}/cel --help")
-    assert_match "when", shell_output("#{bin}/when now")
   end
 end
