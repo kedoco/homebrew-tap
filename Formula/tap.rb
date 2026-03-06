@@ -7,22 +7,22 @@ class Tap < Formula
   on_macos do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-apple-darwin.tar.gz"
-      sha256 "a818c6c45bf1939438a69bc63d2f2c2bbe128d6c006668fa1be7b68c91eafe2e"
+      sha256 "f6b8f975d86fac6f11384c703c0dedba2ca285d52db962b4b6cac4231b092a9e"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-apple-darwin.tar.gz"
-      sha256 "38c611554aa48b85804e6effbd3d1a0bd17ca36097dedb0f3cfdae94eedf2fb8"
+      sha256 "cb6ce2fc9f730049af63de3554afccdcae42f0e8e11f08dc351b1179c8972b29"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "21669e64e51f337f4cc64d8750bffa46d8c208a9a72631c31a571c981462fa31"
+      sha256 "03bd0a8b817baf13d44d51602f93cb2c355ac9299f58c12bd53a821698aa5bec"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7c8eb8471e7352fd090eb329cbc339474d3a10287d0898e07cb443f22475f957"
+      sha256 "33adbaa9297ca98594e6b416390beb3713d7f6a9f4b623e1bf403f16669c76ce"
     end
   end
 
