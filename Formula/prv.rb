@@ -1,28 +1,28 @@
 class Prv < Formula
   desc "File provenance tracker via syscall tracing or shell hooks"
   homepage "https://github.com/kedoco/nix-pipe-tools"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-apple-darwin.tar.gz"
-      sha256 "f6b8f975d86fac6f11384c703c0dedba2ca285d52db962b4b6cac4231b092a9e"
+      sha256 "5d04c338744f8973afe3e1185506d85703c83c0120b2d1763ced6992c6269f73"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-apple-darwin.tar.gz"
-      sha256 "cb6ce2fc9f730049af63de3554afccdcae42f0e8e11f08dc351b1179c8972b29"
+      sha256 "ce0d83879e368e4f9a7cd9bc040d498a742108eac36c15e62a037f7f88319c1e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "03bd0a8b817baf13d44d51602f93cb2c355ac9299f58c12bd53a821698aa5bec"
+      sha256 "e904990887f0087f59edf558fdfd3b71e9e986b2657d30696faf517576fbaed1"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "33adbaa9297ca98594e6b416390beb3713d7f6a9f4b623e1bf403f16669c76ce"
+      sha256 "bc3527b21a69ceb4f4aa8eae664a87b2b7bad897a2afa9552ca688a9d710a0c9"
     end
   end
 
