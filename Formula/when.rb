@@ -1,28 +1,28 @@
 class When < Formula
   desc "Timestamp converter and time arithmetic"
   homepage "https://github.com/kedoco/nix-pipe-tools"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-apple-darwin.tar.gz"
-      sha256 "d479eabdd154033df0ac302d998c44c2b2d313e98762225002a9fa8ce9247953"
+      sha256 "f8ca47897e6b2d80d9b67685d4a3c6239abca9bc6734198aac504cf0b9b8c83c"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-apple-darwin.tar.gz"
-      sha256 "bae473481bc0bd29fafaa650bd8083b6c1d36f0960ef90b26158e641f381f990"
+      sha256 "79f83fb14d57f5b911cde6df69b0d92c8694e2583157771289bde6475e156dbf"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c390543bc6d016c62e4aaa8a2f1e57e203fcf96f7098ced92ba4c5468279b686"
+      sha256 "3df1181b402cd16c8c12277559eedd2123d898ae0e94107dab50b4f239e24bf1"
     end
     on_intel do
       url "https://github.com/kedoco/nix-pipe-tools/releases/download/v#{version}/nix-pipe-tools-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5c887f459cf622da021436545b67646eb89023f369a199c4b0fbc4af09290963"
+      sha256 "fbb385083aec100eafd75aec5d65b747c5b52112bc58164b074dec8d3107a390"
     end
   end
 
